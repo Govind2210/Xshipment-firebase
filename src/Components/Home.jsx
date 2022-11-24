@@ -12,7 +12,7 @@ import {
 
 function Home() {
     const [newName, setNewName] = useState("");
-  const [newAge, setNewAge] = useState(0);
+    const [newAge, setNewAge] = useState(0);
 
   const [users, setUsers] = useState([]);
   const usersCollectionRef = collection(db, "users");
@@ -46,12 +46,14 @@ function Home() {
 
   return (
     <div className="App">
+      
       <input
         placeholder="Name..."
         onChange={(event) => {
           setNewName(event.target.value);
         }}
       />
+
       <input
         type="number"
         placeholder="Age..."
@@ -60,7 +62,7 @@ function Home() {
         }}
       />
 
-      <button onClick={createUser} className="btn btn-success " > Create User</button>
+      <button onClick={createUser} className="btn btn-success mx-2" > Create User</button>
       {users.map((user) => {
         return (
           <div>
