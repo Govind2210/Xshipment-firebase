@@ -60,7 +60,7 @@ function Home() {
         }}
       />
 
-      <button onClick={createUser} className="btn btn-success mx-2px" > Create User</button>
+      <button onClick={createUser} className="btn btn-success " > Create User</button>
       {users.map((user) => {
         return (
           <div>
@@ -68,7 +68,7 @@ function Home() {
             <h1>Name: {user.name}</h1>
             <h1>Age: {user.age}</h1>
             <button
-            className="btn btn-primary"
+            className="btn btn-primary mx-2"
               onClick={() => {
                 updateUser(user.id, user.age);
               }}
