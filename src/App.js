@@ -22,7 +22,7 @@ function App() {
           <Route path='/signup' element={<Signup/>}/>
           <Route path='/home' element={
            <ProtectedRoute>
-                {/* <Navbar/> */}
+              <Navbar/>
                <Home/>
            </ProtectedRoute>
           }/>

@@ -45,9 +45,10 @@ function Home() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App myContainer">
       
       <input
+        className="mx-2"
         placeholder="Name..."
         onChange={(event) => {
           setNewName(event.target.value);
@@ -55,6 +56,7 @@ function Home() {
       />
 
       <input
+        className="mx-2"
         type="number"
         placeholder="Age..."
         onChange={(event) => {
